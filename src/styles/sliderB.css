@@ -1,0 +1,188 @@
+.groupSet {
+	display: flex;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: 449px;
+	width: 449px;
+	height: 425px;
+}
+  
+.group--path {
+	display: flex;
+	position: absolute;
+	background-image: url(../../public/tools/graphic/path.svg);
+	background-repeat: no-repeat;
+	background-size: 530px;
+	width: 530px;
+	height: 529px;
+	animation: path 0.3s ease;
+	z-index: 1;
+}
+
+.groupTwo--book1 {
+	background-image: url(../../public/tools/graphic/groupTwo/groupTwo--book1.svg);
+	animation: book1 0.8s ease-out;
+	z-index: 4;
+}
+
+.groupTwo--book2 {
+	background-image: url(../../public/tools/graphic/groupTwo/groupTwo--book2.svg);
+	animation: book2 0.8s ease-out;
+	z-index: 4;
+}
+
+.groupTwo--folder1 {
+	background-image: url(../../public/tools/graphic/groupTwo/groupTwo--folder1.svg);
+	animation: folder1 1.2s ease-in-out;
+	z-index: 4;
+}
+
+.groupTwo--folder2 {
+	background-image: url(../../public/tools/graphic/groupTwo/groupTwo--folder2.svg);
+	animation: folder2 0.3s ease-in-out;
+	z-index: 2;
+}
+
+.groupTwo--folder3 {
+	background-image: url(../../public/tools/graphic/groupTwo/groupTwo--folder3.svg);
+	animation: folder3 0.7s ease-in-out;
+	z-index: 2;
+}
+
+.groupTwo--pen {
+	background-image: url(../../public/tools/graphic/groupTwo/groupTwo--pen.svg);
+	animation: pen 1.5s ease-in-out;
+	z-index: 3;
+}
+
+.groupTwo--person {
+	background-image: url(../../public/tools/graphic/groupTwo/groupTwo--person.svg);
+	animation: person 1.7s ease-in-out;
+	z-index: 3;
+}
+
+.groupTwo--rule {
+	background-image: url(../../public/tools/graphic/groupTwo/groupTwo--rule.svg);
+	animation: rule 1.7s ease-in-out;
+	z-index: 3;
+}
+
+.groupTwo--coin4 {
+	background-image: url(../../public/tools/graphic/groupOne/groupOne--coin4.svg);
+	animation: fallCoin 1.5s ease-in-out;
+	z-index: 3;
+}
+
+.groupTwo--coin5 {
+	background-image: url(../../public/tools/graphic/groupOne/groupOne--coin5.svg);
+	animation: fallCoin 1.5s ease-in-out;
+	z-index: 3;
+}
+
+.groupTwo--coin6 {
+	background-image: url(../../public/tools/graphic/groupOne/groupOne--coin6.svg);
+	animation: fallCoin 1.7s ease-in-out;
+	z-index: 3;
+}
+
+@keyframes book1 {
+	0% {
+		opacity: 0;
+		transform: translateX(20%) translateY(15%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+@keyframes book2 {
+	0% {
+		opacity: 0;
+		transform: translateX(-15%) translateY(-15%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+@keyframes folder1 {
+	0% {
+		opacity: 0;
+		transform: translateX(-20%) translateY(15%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+@keyframes folder2 {
+	0% {
+		opacity: 0;
+		transform: translateX(-20%) translateY(15%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+@keyframes folder3 {
+	0% {
+		opacity: 0;
+		transform: translateX(-20%) translateY(15%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+@keyframes pen {
+	0% {
+		opacity: 0;
+		transform: translateX(30%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+@keyframes person {
+	0% {
+		opacity: 0;
+		transform: translateY(-30%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes rule {
+	0% {
+		opacity: 0;
+		transform: translateX(30%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+@keyframes path {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

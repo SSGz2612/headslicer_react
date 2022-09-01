@@ -1,0 +1,154 @@
+.groupSet {
+	display: flex;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: 449px;
+	width: 449px;
+	height: 425px;
+}
+  
+.group--path {
+	display: flex;
+	position: absolute;
+	background-image: url(../../public/tools/graphic/path.svg);
+	background-repeat: no-repeat;
+	background-size: 530px;
+	width: 530px;
+	height: 529px;
+	animation: path 0.3s ease;
+	z-index: 1;
+}
+
+.groupOne--person1 {
+	background-image: url(../../public/tools/graphic/groupOne/groupOne--person1.svg);
+	animation: person1 0.8s ease-out;
+	z-index: 4;
+}
+
+.groupOne--person2 {
+	background-image: url(../../public/tools/graphic/groupOne/groupOne--person2.svg);
+	animation: person2 0.8s ease-out;
+	z-index: 4;
+}
+
+.groupOne--person3 {
+	background-image: url(../../public/tools/graphic/groupOne/groupOne--person3.svg);
+	animation: person3 1.2s ease-in-out;
+	z-index: 4;
+}
+
+.groupOne--calendar1 {
+	background-image: url(../../public/tools/graphic/groupOne/groupOne--calendar1.svg);
+	animation: calendar 0.3s ease-in-out;
+	z-index: 2;
+}
+
+.groupOne--calendar2 {
+	background-image: url(../../public/tools/graphic/groupOne/groupOne--calendar2.svg);
+	animation: calendar 0.7s ease-in-out;
+	z-index: 2;
+}
+
+.groupOne--coin1 {
+	background-image: url(../../public/tools/graphic/groupOne/groupOne--coin1.svg);
+	animation: fallCoin 1.5s ease-in-out;
+	z-index: 3;
+}
+
+.groupOne--coin2 {
+	background-image: url(../../public/tools/graphic/groupOne/groupOne--coin2.svg);
+	animation: fallCoin 1.7s ease-in-out;
+	z-index: 3;
+}
+
+.groupOne--coin3 {
+	background-image: url(../../public/tools/graphic/groupOne/groupOne--coin3.svg);
+	animation: fallCoin 1.7s ease-in-out;
+	z-index: 3;
+}
+
+.groupOne--coin4 {
+	background-image: url(../../public/tools/graphic/groupOne/groupOne--coin4.svg);
+	animation: fallCoin 1.5s ease-in-out;
+	z-index: 3;
+}
+
+.groupOne--coin5 {
+	background-image: url(../../public/tools/graphic/groupOne/groupOne--coin5.svg);
+	animation: fallCoin 1.5s ease-in-out;
+	z-index: 3;
+}
+
+.groupOne--coin6 {
+	background-image: url(../../public/tools/graphic/groupOne/groupOne--coin6.svg);
+	animation: fallCoin 1.7s ease-in-out;
+	z-index: 3;
+}
+
+@keyframes person1 {
+	0% {
+		opacity: 0;
+		transform: translateX(20%) translateY(15%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+@keyframes person2 {
+	0% {
+		opacity: 0;
+		transform: translateX(-15%) translateY(-15%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+@keyframes person3 {
+	0% {
+		opacity: 0;
+		transform: translateX(-20%) translateY(15%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+@keyframes calendar {
+	0% {
+		opacity: 0;
+		transform: translateX(30%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+
+@keyframes path {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fallCoin {
+	0% {
+		opacity: 0;
+		transform: translateY(-30%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
