@@ -20,117 +20,131 @@
 }
 
 .groupThree--micro1 {
+	opacity: 0;
 	background-image: url(../../public/tools/graphic/groupThree/groupThree--micro1.svg);
-	animation: micro1 0.8s ease-out;
+	animation: tableJump 0.3s ease-out;
+	animation-delay: 0.2s;
+	animation-fill-mode: forwards;
 	z-index: 4;
 }
 
 .groupThree--micro2 {
+	opacity: 0;
 	background-image: url(../../public/tools/graphic/groupThree/groupThree--micro2.svg);
-	animation: micro2 0.8s ease-out;
+	animation: tableJump 0.3s ease-out;
+	animation-delay: 0.3s;
+	animation-fill-mode: forwards;
 	z-index: 4;
 }
 
 .groupThree--micro3 {
+	opacity: 0;
 	background-image: url(../../public/tools/graphic/groupThree/groupThree--micro3.svg);
-	animation: micro3 1.2s ease-in-out;
+	animation: tableJump 0.3s ease-in-out;
+	animation-delay: 0.4s;
+	animation-fill-mode: forwards;
 	z-index: 4;
 }
 
 .groupThree--bitcoin {
+	opacity: 0;
 	background-image: url(../../public/tools/graphic/groupThree/groupThree--bitcoin.svg);
 	animation: bitcoin 1.5s ease-in-out;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+	animation-delay: 1.5s;
 	z-index: 3;
 }
 
 .groupThree--tableBitcoin {
+	opacity: 0;
 	background-image: url(../../public/tools/graphic/groupThree/groupThree--tableBitcoin.svg);
-	animation: tableBitcoin 1.5s ease-in-out;
+	animation: tableBitcoin 0.3s ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 1.2s;
 	z-index: 2;
 }
 
 .groupThree--laptop {
 	background-image: url(../../public/tools/graphic/groupThree/groupThree--laptop.svg);
-	animation: laptop 1.7s ease-in-out;
+	animation: upToDown 1.2s ease-in-out;
 	z-index: 3;
 }
 
 .groupThree--tableLaptop {
+	opacity: 0;
 	background-image: url(../../public/tools/graphic/groupThree/groupThree--tableLaptop.svg);
-	animation: tableLaptop 1.5s ease-in-out;
+	animation: tableJump 0.3s ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 0.8s;
 	z-index: 2;
 }
 
 .groupThree--lock {
 	background-image: url(../../public/tools/graphic/groupThree/groupThree--lock.svg);
-	animation: lock 1.7s ease-in-out;
+	animation: upToDown 1.2s ease-in-out;
 	z-index: 3;
 }
 
 .groupThree--tableLock {
+	opacity: 0;
 	background-image: url(../../public/tools/graphic/groupThree/groupThree--tableLock.svg);
-	animation: tableLock 1.5s ease-in-out;
+	animation: tableJump 0.3s ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 0.9s;
 	z-index: 2;
 }
 
 .groupThree--microPhone {
+	opacity: 0;
 	background-image: url(../../public/tools/graphic/groupThree/groupThree--microPhone.svg);
-	animation: microPhone 1.5s ease-in-out;
+	animation: microPhone 1.8s ease-in-out;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
 	z-index: 4;
 }
 
 .groupThree--phone {
 	background-image: url(../../public/tools/graphic//groupThree/groupThree--phone.svg);
-	animation: phone 1.5s ease-in-out;
+	animation: upToDown 1.2s ease-in-out;
 	z-index: 3;
 }
 
 .groupThree--tablePhone {
+	opacity: 0;
 	background-image: url(../../public/tools/graphic/groupThree/groupThree--tablePhone.svg);
-	animation: tablePhone 1.5s ease-in-out;
+	animation: tableJump 0.3s ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 0.7s;
 	z-index: 2;
 }
 
-@keyframes micro1 {
+@keyframes tableJump {
 	0% {
 		opacity: 0;
-		transform: translateX(20%) translateY(15%);
+		transform: scale(1);
+	}
+
+	50% {
+		opacity: 1;
+		transform: scale(1.1);
 	}
 
 	100% {
 		opacity: 1;
-		transform: translateX(0%);
-	}
-}
-
-@keyframes micro2 {
-	0% {
-		opacity: 0;
-		transform: translateX(-15%) translateY(-15%);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateX(0%);
-	}
-}
-
-@keyframes micro3 {
-	0% {
-		opacity: 0;
-		transform: translateX(-20%) translateY(15%);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateX(0%);
+		transform: scale(1);
 	}
 }
 
 @keyframes bitcoin {
 	0% {
-		opacity: 0;
-		transform: translateX(30%);
+		opacity: 1;
+		transform: translateY(0%);
+	}
+
+	50% {
+		opacity: 1;
+		transform: translateY(-3%);
 	}
 	100% {
 		opacity: 1;
@@ -141,57 +155,18 @@
 @keyframes tableBitcoin {
 	0% {
 		opacity: 0;
-		transform: translateX(30%);
+		transform: scale(1.5);
 	}
 	100% {
 		opacity: 1;
-		transform: translateX(0%);
+		transform: scale(1);
 	}
 }
 
-
-@keyframes laptop {
+@keyframes upToDown {
 	0% {
 		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes tableLaptop {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes lock {
-	0% {
-		opacity: 0;
-		transform: translateY(-30%);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0%);
-	}
-}
-
-@keyframes tableLock {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes phone {
-	0% {
-		opacity: 0;
-		transform: translateY(-30%);
+		transform: translateY(-10%);
 	}
 	100% {
 		opacity: 1;
@@ -202,19 +177,16 @@
 @keyframes microPhone {
 	0% {
 		opacity: 0;
-		transform: translateY(-30%);
-	}
-	100% {
-		opacity: 1;
 		transform: translateY(0%);
+		
 	}
-}
-
-@keyframes tablePhone {
-	0% {
-		opacity: 0;
-	}
-	100% {
+	50% {
 		opacity: 1;
+		transform: translateY(3%) translateX(-3%);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(6%) translateX(-6%);
 	}
 }

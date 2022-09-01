@@ -21,127 +21,129 @@
 
 .groupTwo--book1 {
 	background-image: url(../../public/tools/graphic/groupTwo/groupTwo--book1.svg);
-	animation: book1 0.8s ease-out;
-	z-index: 4;
+	animation: book1 0.3s ease-out;
+	z-index: 2;
 }
 
 .groupTwo--book2 {
 	background-image: url(../../public/tools/graphic/groupTwo/groupTwo--book2.svg);
-	animation: book2 0.8s ease-out;
-	z-index: 4;
+	animation: book2 0.5s ease-out;
+	z-index: 2;
 }
 
 .groupTwo--folder1 {
 	background-image: url(../../public/tools/graphic/groupTwo/groupTwo--folder1.svg);
-	animation: folder1 1.2s ease-in-out;
-	z-index: 4;
+	animation: folder 0.7s ease-in-out;
+	z-index: 5;
 }
 
 .groupTwo--folder2 {
 	background-image: url(../../public/tools/graphic/groupTwo/groupTwo--folder2.svg);
-	animation: folder2 0.3s ease-in-out;
-	z-index: 2;
+	animation: folder 0.7s ease-in-out;
+	z-index: 3;
 }
 
 .groupTwo--folder3 {
 	background-image: url(../../public/tools/graphic/groupTwo/groupTwo--folder3.svg);
-	animation: folder3 0.7s ease-in-out;
-	z-index: 2;
+	animation: folder1 0.3s ease-in-out;
+	z-index: 3;
 }
 
 .groupTwo--pen {
 	background-image: url(../../public/tools/graphic/groupTwo/groupTwo--pen.svg);
 	animation: pen 1.5s ease-in-out;
-	z-index: 3;
+	z-index: 2;
 }
 
 .groupTwo--person {
 	background-image: url(../../public/tools/graphic/groupTwo/groupTwo--person.svg);
 	animation: person 1.7s ease-in-out;
-	z-index: 3;
+	z-index: 2;
 }
 
 .groupTwo--rule {
 	background-image: url(../../public/tools/graphic/groupTwo/groupTwo--rule.svg);
 	animation: rule 1.7s ease-in-out;
+	z-index: 2;
+}
+
+.groupTwo--statits1 {
+	background-image: url(../../public/tools/graphic/groupTwo/groupTwo--statits1.svg);
+	animation: statits 1.5s ease-in-out;
+	z-index: 2;
+}
+
+.groupTwo--statits2 {
+	background-image: url(../../public/tools/graphic/groupTwo/groupTwo--statits2.svg);
+	animation: statits 1.5s ease-in-out;
+	z-index: 2;
+}
+
+.groupTwo--statits3 {
+	background-image: url(../../public/tools/graphic/groupTwo/groupTwo--statits3.svg);
+	animation: statits 1.5s ease-in-out;
 	z-index: 3;
 }
 
-.groupTwo--coin4 {
-	background-image: url(../../public/tools/graphic/groupOne/groupOne--coin4.svg);
-	animation: fallCoin 1.5s ease-in-out;
-	z-index: 3;
+.groupTwo--statits4 {
+	background-image: url(../../public/tools/graphic/groupTwo/groupTwo--statits4.svg);
+	animation: statits 1.5s ease-in-out;
+	z-index: 2;
 }
 
-.groupTwo--coin5 {
-	background-image: url(../../public/tools/graphic/groupOne/groupOne--coin5.svg);
-	animation: fallCoin 1.5s ease-in-out;
-	z-index: 3;
-}
-
-.groupTwo--coin6 {
-	background-image: url(../../public/tools/graphic/groupOne/groupOne--coin6.svg);
-	animation: fallCoin 1.7s ease-in-out;
-	z-index: 3;
+.groupTwo--statits5 {
+	opacity: 0;
+	background-image: url(../../public/tools/graphic/groupTwo/groupTwo--statits5.svg);
+	animation: statits2 3s ease-in-out;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+	animation-delay: 1.5s;
+	z-index: 2;
 }
 
 @keyframes book1 {
 	0% {
 		opacity: 0;
-		transform: translateX(20%) translateY(15%);
+		transform: translateY(15%);
 	}
 
 	100% {
 		opacity: 1;
-		transform: translateX(0%);
+		transform: translateY(0%);
 	}
 }
 
 @keyframes book2 {
 	0% {
 		opacity: 0;
-		transform: translateX(-15%) translateY(-15%);
+		transform: translateY(-15%);
 	}
 
 	100% {
 		opacity: 1;
-		transform: translateX(0%);
+		transform: translateY(0%);
+	}
+}
+
+@keyframes folder {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
 	}
 }
 
 @keyframes folder1 {
 	0% {
 		opacity: 0;
-		transform: translateX(-20%) translateY(15%);
+		transform: scale(1.2);
 	}
 
 	100% {
 		opacity: 1;
-		transform: translateX(0%);
-	}
-}
-
-@keyframes folder2 {
-	0% {
-		opacity: 0;
-		transform: translateX(-20%) translateY(15%);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateX(0%);
-	}
-}
-
-@keyframes folder3 {
-	0% {
-		opacity: 0;
-		transform: translateX(-20%) translateY(15%);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateX(0%);
+		transform: scale(1);
 	}
 }
 
@@ -175,6 +177,32 @@
 	100% {
 		opacity: 1;
 		transform: translateX(0%);
+	}
+}
+
+@keyframes statits {
+	0% {
+		opacity: 0;
+		transform: translateX(30%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+@keyframes statits2 {
+	0% {
+		opacity: 1;
+		transform: translateY(-10%);
+	}
+	50% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(-10%);
 	}
 }
 

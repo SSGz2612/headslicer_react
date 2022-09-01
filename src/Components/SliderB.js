@@ -24,12 +24,11 @@ function SliderB(){
 				<div className="groupTwo--person groupSet"></div>
 				<div className="groupTwo--rule groupSet"></div>
 
-				<div className="groupTwo--coin1 groupSet"></div>
-				<div className="groupTwo--coin2 groupSet"></div>
-				<div className="groupTwo--coin3 groupSet"></div>
-				<div className="groupTwo--coin4 groupSet"></div>
-				<div className="groupTwo--coin5 groupSet"></div>
-				<div className="groupTwo--coin6 groupSet"></div>
+				<div className="groupTwo--statits1 groupSet"></div>
+				<div className="groupTwo--statits2 groupSet"></div>
+				<div className="groupTwo--statits3 groupSet"></div>
+				<div className="groupTwo--statits4 groupSet"></div>
+				<div className="groupTwo--statits5 groupSet"></div>
 			</div>
 		</>
 	);

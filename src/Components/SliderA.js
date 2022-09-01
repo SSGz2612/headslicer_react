@@ -20,6 +20,8 @@ function SliderA(){
 				<div className="groupOne--person2 groupSet"></div>
 				<div className="groupOne--person3 groupSet"></div>
 
+				<div className="groupOne--like groupSet"></div>
+
 				<div className="groupOne--coin1 groupSet"></div>
 				<div className="groupOne--coin2 groupSet"></div>
 				<div className="groupOne--coin3 groupSet"></div>
