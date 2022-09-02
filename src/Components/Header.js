@@ -1,10 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import SliderA from "./SliderA";
 import SliderB from "./SliderB";
 import SliderC from "./SliderC";
 
 function Header(){
 	const [numer, setNumer] = useState(0);
+
+	useEffect(() => {
+		let i = numer;
+		setInterval(() => {
+			if(i < 2 && numer < 2){
+				setNumer(n => n + 1);
+				i++;
+			} else {
+				i = 0;
+				setNumer(n => n = 0);
+			}
+		}, 9000);
+	}, []);
+
+	useEffect(() => {
+		if(numer === 3){
+			setNumer(0);
+		}
+	}, [numer]);
 
 	return<>
 		<header>
