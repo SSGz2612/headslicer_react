@@ -16,11 +16,19 @@ function SliderA(){
 				<div className="groupOne--calendar1 groupSet"></div>
 				<div className="groupOne--calendar2 groupSet"></div>
 
+				<div className="groupOne--ring1 groupSet"></div>
+				<div className="groupOne--ring2 groupSet"></div>
+				<div className="groupOne--ring3 groupSet"></div>
+				<div className="groupOne--ring4 groupSet"></div>
+				<div className="groupOne--ring5 groupSet"></div>
+
 				<div className="groupOne--person1 groupSet"></div>
 				<div className="groupOne--person2 groupSet"></div>
 				<div className="groupOne--person3 groupSet"></div>
 
 				<div className="groupOne--like groupSet"></div>
+				<div className="groupOne--date1 groupSet"></div>
+				<div className="groupOne--date2 groupSet"></div>
 
 				<div className="groupOne--coin1 groupSet"></div>
 				<div className="groupOne--coin2 groupSet"></div>

@@ -15,7 +15,7 @@
 	background-size: 530px;
 	width: 530px;
 	height: 529px;
-	animation: path 0.3s ease;
+	animation: path 0.3s ease-in-out;
 	z-index: 1;
 }
 
@@ -61,6 +61,26 @@
 	z-index: 2;
 }
 
+.groupOne--date1 {
+	opacity: 0;
+	background-image: url(../../public/tools/graphic/groupOne/groupOne--date1.svg);
+	animation: date1 8s ease-in-out;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-delay: 2s;
+	z-index: 4;
+}
+
+.groupOne--date2 {
+	opacity: 0;
+	background-image: url(../../public/tools/graphic/groupOne/groupOne--date2.svg);
+	animation: date2 8s ease-in-out;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-delay: 5s;
+	z-index: 4;
+}
+
 .groupOne--like {
 	opacity: 0;
 	background-image: url(../../public/tools/graphic/groupOne/groupOne--like.svg);
@@ -68,6 +88,51 @@
 	animation-fill-mode: forwards;
 	animation-iteration-count: infinite;
 	animation-delay: 1s;
+	z-index: 3;
+}
+
+.groupOne--ring1 {
+	opacity: 0;
+	background-image: url(../../public/tools/graphic/groupOne/groupOne--ring1.svg);
+	animation: fallCoin 0.3s ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 1.2s;
+	z-index: 3;
+}
+
+.groupOne--ring2 {
+	opacity: 0;
+	background-image: url(../../public/tools/graphic/groupOne/groupOne--ring2.svg);
+	animation: fallCoin 0.3s ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 1.3s;
+	z-index: 3;
+}
+
+.groupOne--ring3 {
+	opacity: 0;
+	background-image: url(../../public/tools/graphic/groupOne/groupOne--ring3.svg);
+	animation: fallCoin 0.3s ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 1.4s;
+	z-index: 3;
+}
+
+.groupOne--ring4 {
+	opacity: 0;
+	background-image: url(../../public/tools/graphic/groupOne/groupOne--ring4.svg);
+	animation: fallCoin 0.3s ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 1.5s;
+	z-index: 3;
+}
+
+.groupOne--ring5 {
+	opacity: 0;
+	background-image: url(../../public/tools/graphic/groupOne/groupOne--ring5.svg);
+	animation: fallCoin 0.3s ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 1.6s;
 	z-index: 3;
 }
 
@@ -252,4 +317,20 @@
 		opacity: 0;
 		transform: translateY(-9%);
 	}
+}
+
+@keyframes date1 {
+	0% { opacity: 0; }
+	10% { opacity: 1; }
+	60% { opacity: 1; }
+	70% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+@keyframes date2 {
+	0% { opacity: 0; }
+	10% { opacity: 1; }
+	60% { opacity: 1; }
+	70% { opacity: 0; }
+	100% { opacity: 0; }
 }

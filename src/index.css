@@ -123,6 +123,7 @@ header {
   max-width: 493px;
   width: 100%;
   margin: 120px 0 10px 110px;
+  z-index: 999;
 }
 
 .header__sideText--text {
@@ -130,6 +131,7 @@ header {
   max-width: 529px;
   width: 100%;
   margin: 0 0 64px 110px;
+  z-index: 999;
 }
 
 .header__sideText button {
